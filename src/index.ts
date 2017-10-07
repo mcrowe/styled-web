@@ -3,12 +3,12 @@ import {
   ITextStyle,
   IViewStyle
 } from './types'
-import { normalizeLayout } from './util'
+import { normalizeStyle } from './util'
 
 
 export function text(style: ITextStyle) {
 
-  normalizeLayout(style)
+  normalizeStyle(style)
 
   return class StyledText extends React.Component<ITextStyle, {}> {
 
@@ -32,7 +32,7 @@ export function text(style: ITextStyle) {
 
 export function view(style: IViewStyle) {
 
-  normalizeLayout(style)
+  normalizeStyle(style)
 
   const defaultStyle: IViewStyle = {
     display: 'flex',

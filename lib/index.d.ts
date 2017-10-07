@@ -37,6 +37,33 @@ export declare function text(style: ITextStyle): {
                 borderRightColor?: string | undefined;
                 borderBottomColor?: string | undefined;
                 borderLeftColor?: string | undefined;
+                borderStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderTopStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderRightStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderBottomStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderLeftStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                border?: {
+                    left?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                    right?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                    top?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                    bottom?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                } | undefined;
                 borderRadius?: number | undefined;
             };
         }, HTMLElement>;
@@ -98,6 +125,33 @@ export declare function view(style: IViewStyle): {
                 borderRightColor?: string | undefined;
                 borderBottomColor?: string | undefined;
                 borderLeftColor?: string | undefined;
+                borderStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderTopStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderRightStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderBottomStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                borderLeftStyle?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                border?: {
+                    left?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                    right?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                    top?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                    bottom?: {
+                        width?: number | undefined;
+                        color?: string | undefined;
+                        style?: "none" | "hidden" | "initial" | "inherit" | "dotted" | "dashed" | "solid" | "double" | "groove" | "ridge" | "inset" | "outset" | undefined;
+                    } | undefined;
+                } | undefined;
                 borderRadius?: number | undefined;
                 alignContent?: "center" | "flex-start" | "flex-end" | "space-between" | "space-around" | "stretch" | undefined;
                 alignItems?: "center" | "flex-start" | "flex-end" | "stretch" | "baseline" | undefined;

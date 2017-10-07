@@ -1,11 +1,11 @@
 import test from 'ava'
 import * as Util from './util'
-import { ILayout } from './types'
+import { ITextStyle } from './types'
 
 
 test('normalizeLayout', t => {
-  const style: ILayout = {paddingHorizontal: 12, marginVertical: 6}
-  Util.normalizeLayout(style)
+  const style: ITextStyle = {paddingHorizontal: 12, marginVertical: 6}
+  Util.normalizeStyle(style)
 
   t.deepEqual(
     style,

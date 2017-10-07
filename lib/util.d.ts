@@ -1,2 +1,2 @@
-import { ILayout } from './types';
-export declare function normalizeLayout(style: ILayout): void;
+import { ITextStyle } from './types';
+export declare function normalizeStyle(style: ITextStyle): void;

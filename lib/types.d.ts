@@ -1,4 +1,5 @@
 export declare type IColor = string;
+export declare type IBorderStyle = 'none' | 'hidden' | 'dotted' | 'dashed' | 'solid' | 'double' | 'groove' | 'ridge' | 'inset' | 'outset' | 'initial' | 'inherit';
 export interface IPadding {
     padding?: number;
     paddingHorizontal?: number;
@@ -19,6 +20,7 @@ export interface IMargin {
 }
 export interface ILayout extends IPadding, IMargin {
 }
+export declare type ISide = 'top' | 'right' | 'bottom' | 'left';
 export interface IBorder {
     borderWidth?: number;
     borderTopWidth?: number;
@@ -30,6 +32,18 @@ export interface IBorder {
     borderRightColor?: IColor;
     borderBottomColor?: IColor;
     borderLeftColor?: IColor;
+    borderStyle?: IBorderStyle;
+    borderTopStyle?: IBorderStyle;
+    borderRightStyle?: IBorderStyle;
+    borderBottomStyle?: IBorderStyle;
+    borderLeftStyle?: IBorderStyle;
+    border?: {
+        [k in ISide]?: {
+            width?: number;
+            color?: IColor;
+            style?: IBorderStyle;
+        };
+    };
     borderRadius?: number;
 }
 export interface IBasic {
