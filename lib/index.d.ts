@@ -3,6 +3,7 @@ import * as React from 'react';
 import { ITextStyle, IViewStyle } from './types';
 export declare function text(style: ITextStyle): {
     new (props?: ITextStyle | undefined, context?: any): {
+        node: HTMLElement | null;
         render(): React.DetailedReactHTMLElement<{
             style: {
                 children?: React.ReactNode;
@@ -66,6 +67,7 @@ export declare function text(style: ITextStyle): {
                 } | undefined;
                 borderRadius?: number | undefined;
             };
+            ref: (ref: HTMLElement | null) => HTMLElement | null;
         }, HTMLElement>;
         setState<K extends never>(f: (prevState: {}, props: ITextStyle) => Pick<{}, K>, callback?: (() => any) | undefined): void;
         setState<K extends never>(state: Pick<{}, K>, callback?: (() => any) | undefined): void;
@@ -82,6 +84,7 @@ export declare function text(style: ITextStyle): {
 };
 export declare function view(style: IViewStyle): {
     new (props?: IViewStyle | undefined, context?: any): {
+        node: HTMLElement | null;
         render(): React.DetailedReactHTMLElement<{
             style: {
                 children?: React.ReactNode;
@@ -94,6 +97,9 @@ export declare function view(style: IViewStyle): {
                 height?: string | number | undefined;
                 maxWidth?: string | number | undefined;
                 maxHeight?: string | number | undefined;
+                overflow?: "auto" | "hidden" | "scroll" | undefined;
+                overflowY?: "auto" | "hidden" | "scroll" | undefined;
+                overflowX?: "auto" | "hidden" | "scroll" | undefined;
                 color?: string | undefined;
                 fontSize?: number | undefined;
                 fontWeight?: "initial" | "inherit" | "unset" | "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | undefined;
@@ -163,6 +169,7 @@ export declare function view(style: IViewStyle): {
                 flexWrap?: "nowrap" | "wrap" | "wrap-reverse" | undefined;
                 justifyContent?: "center" | "flex-start" | "flex-end" | "space-between" | "space-around" | "space-evenly" | undefined;
             };
+            ref: (ref: HTMLElement | null) => HTMLElement | null;
         }, HTMLElement>;
         setState<K extends never>(f: (prevState: {}, props: IViewStyle) => Pick<{}, K>, callback?: (() => any) | undefined): void;
         setState<K extends never>(state: Pick<{}, K>, callback?: (() => any) | undefined): void;

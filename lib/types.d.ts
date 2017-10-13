@@ -1,5 +1,6 @@
 export declare type IColor = string;
 export declare type IBorderStyle = 'none' | 'hidden' | 'dotted' | 'dashed' | 'solid' | 'double' | 'groove' | 'ridge' | 'inset' | 'outset' | 'initial' | 'inherit';
+export declare type IOverFlowStyle = 'scroll' | 'auto' | 'hidden';
 export interface IPadding {
     padding?: number;
     paddingHorizontal?: number;
@@ -78,4 +79,7 @@ export interface IViewStyle extends ITextStyle, IFlexBox {
     height?: number | string;
     maxWidth?: number | string;
     maxHeight?: number | string;
+    overflow?: IOverFlowStyle;
+    overflowY?: IOverFlowStyle;
+    overflowX?: IOverFlowStyle;
 }
