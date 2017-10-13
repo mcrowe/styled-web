@@ -12,6 +12,8 @@ export function text(style: ITextStyle) {
 
   return class StyledText extends React.Component<ITextStyle, {}> {
 
+    node: HTMLElement | null
+
     render() {
       return React.createElement(
         'span',
@@ -19,7 +21,8 @@ export function text(style: ITextStyle) {
           style: {
             ...style,
             ...this.props
-          }
+          },
+          ref: (ref => this.node = ref)
         },
         this.props.children
       )
@@ -41,6 +44,8 @@ export function view(style: IViewStyle) {
 
   return class StyledView extends React.Component<IViewStyle, {}> {
 
+    node: HTMLElement | null
+
     render() {
       return React.createElement(
         'div',
@@ -49,7 +54,8 @@ export function view(style: IViewStyle) {
             ...defaultStyle,
             ...style,
             ...this.props
-          }
+          },
+          ref: (ref => this.node = ref)
         },
         this.props.children
       )
